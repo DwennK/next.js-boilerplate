@@ -22,4 +22,4 @@ function Logo() {
     </Link>
   );
 }
-export default LogoImage;
+export default Logo;
