@@ -1,5 +1,5 @@
 import Logo from "@/components/Logo";
-import DarkmodeToggle from "@/components/DarkModeToggle";
+import DarkModeToggle from "@/components/DarkModeToggle";
 
 function Header() {
   return (
@@ -11,7 +11,7 @@ function Header() {
 
           {/* Session && */}
 
-          <DarkmodeToggle />
+          <DarkModeToggle />
 
           {/* UserButton */}
         </div>
