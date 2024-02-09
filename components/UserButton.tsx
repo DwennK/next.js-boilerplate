@@ -7,10 +7,17 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+import UserAvatar from "./UserAvatar";
+
 function UserButton() {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+      <DropdownMenuTrigger>
+        <UserAvatar
+          name="Dwenn Kaufmann"
+          image="https://github.com/shadcn.png"
+        ></UserAvatar>
+      </DropdownMenuTrigger>
       <DropdownMenuContent>
         <DropdownMenuLabel>My Account</DropdownMenuLabel>
         <DropdownMenuSeparator />
