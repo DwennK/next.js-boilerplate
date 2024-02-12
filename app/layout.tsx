@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 import Header from "@/components/Header";
 import ClientProviders from "@/components/ClientProviders";
+import { SessionProvider } from "next-auth/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClientProviders>
-      <html lang="en">
+      <html lang="en" suppressHydrationWarning>
         <body className={inter.className}>
           <ThemeProvider
             attribute="class"
