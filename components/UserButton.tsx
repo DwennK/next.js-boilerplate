@@ -8,8 +8,9 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import UserAvatar from "./UserAvatar";
+import { Session } from "next-auth";
 
-function UserButton() {
+function UserButton({ session }: { session: Session | null }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
