@@ -32,10 +32,6 @@ function UserButton({ session }: { session: Session | null }) {
         <DropdownMenuContent>
           <DropdownMenuLabel>{session.user?.name}</DropdownMenuLabel>
           <DropdownMenuSeparator />
-          <DropdownMenuItem>Profile</DropdownMenuItem>
-          <DropdownMenuItem>Billing</DropdownMenuItem>
-          <DropdownMenuItem>Team</DropdownMenuItem>
-          <DropdownMenuItem>Subscription</DropdownMenuItem>
           <DropdownMenuItem onClick={() => signOut()}>
             Sign Out
           </DropdownMenuItem>
