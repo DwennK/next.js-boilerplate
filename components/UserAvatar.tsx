@@ -27,7 +27,13 @@ function UserAvatar({
         delayMs={1000}
         className="dark:bg-white dark:text-black text-lg"
       >
-        {name}
+        {/* Split the name by spaces to handle multiple parts (e.g., first and last name)
+      Map over each part to get the first character of each part
+      Join these first characters to form the initials */}
+        {name
+          ?.split(" ")
+          .map((part) => part[0])
+          .join("")}
       </AvatarFallback>
     </Avatar>
   );
